@@ -46,6 +46,15 @@ function App() {
     if (weatherId >= 600 && weatherId <= 622) return 'snowy-background';
     if (weatherId >= 200 && weatherId <= 232) return 'stormy-background';
     if (weatherId >= 701 && weatherId <= 781) return 'foggy-background';
+/*
+200-232: Thunderstorm
+300-321: Drizzle
+500-531: Rain
+600-622: Snow
+701-781: Mist, smoke, haze, sand, dust, fog
+800: Clear sky
+801-804: Clouds (few clouds, scattered clouds, broken clouds, overcast clouds) 
+*/
     
     return 'default-background';
   };
